@@ -1,0 +1,17 @@
+.options {
+  display: flex;
+  gap: 10px;
+}
+.btn {
+    padding: 10px 20px;
+
+    display: flex;
+    align-items: center;
+    gap: 5px;
+
+    background-color: #c4efe3;
+    border: 2px solid #75d2b8;
+    border-radius: 10px;
+
+    cursor: pointer;
+}

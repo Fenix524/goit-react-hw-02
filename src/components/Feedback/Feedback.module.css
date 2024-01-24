@@ -1,0 +1,20 @@
+.feedback {
+  margin-top: 20px;
+  width: 100%;
+  max-width: 450px;
+  border-collapse: collapse;
+}
+
+.feedback th,
+.feedback td {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+.feedback th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #2ca6be;
+  color: white;
+}
