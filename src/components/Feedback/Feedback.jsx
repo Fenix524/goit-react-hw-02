@@ -1,8 +1,7 @@
 /* eslint-disable react/prop-types */
 import css from "./Feedback.module.css";
 
-const Feedback = ({ reactions: { good, neutral, bad } }) => {
-  const totalFeedback = good + neutral + bad;
+const Feedback = ({ reactions: { good, neutral, bad }, totalCount }) => {
   return (
     <table className={css.feedback}>
       <thead>
@@ -26,11 +25,11 @@ const Feedback = ({ reactions: { good, neutral, bad } }) => {
         </tr>
         <tr>
           <td>Total</td>
-          <td>{good + neutral + bad}</td>
+          <td>{totalCount}</td>
         </tr>
         <tr>
           <td>Positive</td>
-          <td>{Math.round(((good + neutral) / totalFeedback) * 100)}%</td>
+          <td>{Math.round(((totalCount - bad) / totalCount) * 100)}%</td>
         </tr>
       </tbody>
     </table>
